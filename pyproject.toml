@@ -14,3 +14,7 @@ dependencies = [
     "pydantic-settings>=2.15.0",
     "gradio",
 ]
+
+[tool.pyright]
+extraPaths = ["."]
+
