@@ -28,14 +28,14 @@ def load_hf_token() -> str:
 
 async def build_agent(hf_token: str):
     client = MultiServerMCPClient(
-        {
-            "weather": {
-                "command": "uv",
-                "args": ["run", "-m", "src.mcp_server"],
-                "transport": "stdio",
-            }
+    {
+        "weather": {
+            "command": "python",
+            "args": ["-m", "src.mcp_server"],
+            "transport": "stdio",
         }
-    )
+    }
+)
     tools = await client.get_tools()
     logger.info("Tools found: %s", [t.name for t in tools])
 
