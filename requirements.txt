@@ -7,3 +7,4 @@ mcp<2.0.0
 pydantic-settings>=2.15.0
 python-dotenv
 gradio
+spaces

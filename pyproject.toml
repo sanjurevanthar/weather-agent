@@ -13,8 +13,11 @@ dependencies = [
     "mcp<2.0.0",
     "pydantic-settings>=2.15.0",
     "gradio",
+    "spaces",
+    "python-dotenv",
 ]
 
 [tool.pyright]
 extraPaths = ["."]
+
 

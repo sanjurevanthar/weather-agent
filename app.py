@@ -4,6 +4,7 @@ src.mcp_client so the same agent logic runs locally and on the Space.
 """
 import asyncio
 import gradio as gr
+import spaces
 
 from src.mcp_client import build_agent, load_hf_token
 
@@ -16,7 +17,7 @@ async def ask(question: str) -> str:
     )
     return response["messages"][-1].content
 
-
+@spaces.GPU
 def run(question: str) -> str:
     return asyncio.run(ask(question))
 
