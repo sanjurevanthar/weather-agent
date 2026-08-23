@@ -29,7 +29,7 @@ demo = gr.Interface(
         placeholder="What's the weather in Chennai right now?",
     ),
     outputs=gr.Textbox(label="Agent's answer"),
-    title="Rev Weather Agent",
+    title="Revanth's Weather Agent",
     description="An MCP-powered agent that fetches live weather via Open-Meteo.",
 )
 
