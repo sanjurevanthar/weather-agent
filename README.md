@@ -1,5 +1,5 @@
 ---
-title: Revanth Weather Agent
+title: Weather Agent
 emoji: 🐠
 colorFrom: pink
 colorTo: gray
